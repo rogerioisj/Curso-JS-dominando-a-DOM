@@ -36,13 +36,13 @@
                 color += letters[Math.floor(Math.random() * 16)];
             }
             return color;
-            
+
         }
         
 
         function setNovaCor(elemento) {
             var newColor = getRandomColor();
-            console.log(elemento.id);
+            console.log(elemento);
             var boxId = elemento.id;
             var boxSelector = document.querySelector(boxId);
             elemento.style.backgroundColor = newColor;
